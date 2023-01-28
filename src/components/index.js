@@ -3,8 +3,9 @@ import ChannelDetail from "./ChannelDetail";
 import NavBar from "./NavBar";
 import SearchFeed from "./SearchFeed";
 import VideoDetail from "./VideoDetail";
+import SearchBar from "./SearchBar";
+import SideBar from "./SideBar";
 
-const Pages = { Feed, NavBar, SearchFeed, VideoDetail, ChannelDetail }
+export { Feed, NavBar, SearchFeed, VideoDetail, ChannelDetail, SearchBar, SideBar };
 
-export default Pages;
 
