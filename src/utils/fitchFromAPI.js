@@ -6,6 +6,7 @@ const options = {
         maxResults: '50'
     },
     headers: {
+        // You should set this your own API key
         'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
