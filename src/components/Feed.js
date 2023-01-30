@@ -41,7 +41,7 @@ const Feed = () => {
       <Box
         padding={2}
         sx={{
-          overflowY: 'hidden',
+          overflowY: 'auto',
           height: '90vh',
           flex: 2
         }}
@@ -57,7 +57,7 @@ const Feed = () => {
           >Videos</span>
         </Typography>
 
-        <Videos videos={videos} />
+        <Videos videos={videos} justifyContent={"start"}/>
 
       </Box>
     </Stack>
