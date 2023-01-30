@@ -3,7 +3,7 @@ import { Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../utils/constants';
 
-const VideoCard = ({ video: { id:{videoId}, snippet: { channelId, channelTitle, description, liveBroadcastContent, publishTime, publishedAt, title, thumbnails } } }) => {
+const VideoCard = ({ video: { id: { videoId }, snippet: { channelId, channelTitle, description, liveBroadcastContent, publishTime, publishedAt, title, thumbnails } } }) => {
     return (
         <Card
             sx={{
@@ -12,6 +12,7 @@ const VideoCard = ({ video: { id:{videoId}, snippet: { channelId, channelTitle, 
                 width: {
                     md: "320px",
                     xs: "100%",
+                    sm: "358px"
                 },
             }}
         >
@@ -23,8 +24,9 @@ const VideoCard = ({ video: { id:{videoId}, snippet: { channelId, channelTitle, 
                         height: "180px",
                         objectFit: "contain",
                         width: {
-                            md: "100%",
-                            xs: "100%",
+                            xs: '100%',
+                            sm: '358px',
+                            md: "320px",
                         }
                     }}
                 />
@@ -77,7 +79,7 @@ const VideoCard = ({ video: { id:{videoId}, snippet: { channelId, channelTitle, 
                                 width: "30px",
                                 height: "30px",
                                 marginRight: "10px",
-                                objectFit:"contain"
+                                objectFit: "contain"
                             }}
                         >
                         </CardMedia>
