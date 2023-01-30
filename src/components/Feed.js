@@ -18,7 +18,6 @@ const Feed = () => {
 
   return (
     <Stack
-      // TODO this is probably an error here because (xs) property
       sx={{ flexDirection: { xs: "column", md: "row" } }}
     >
       <Box
